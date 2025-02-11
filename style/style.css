@@ -33,6 +33,8 @@ body aside {
 body aside h2 {
   font-size: 32px;
   color: #453751;
+  padding: 25px;
+  padding-bottom: 0px;
 }
 body aside form {
   display: grid;
