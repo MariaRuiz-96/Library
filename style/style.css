@@ -63,6 +63,27 @@ body aside form div input {
   font-size: 14px;
   color: #453751;
 }
+body aside form button {
+  background-color: #CB9DF0;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  width: 130px;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF; /*cambio del color de svg*/
+}
+body aside form button svg {
+  width: 20px;
+  height: 20px;
+}
+body aside form button span {
+  font-size: 18px;
+  color: #FFFFFF;
+}
 body main {
   grid-column: 2/3;
   grid-row: 2/3;

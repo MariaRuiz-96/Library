@@ -85,6 +85,31 @@ body{
                     color: $purple-font-add;
                 }
             }
+
+            button{
+                background-color: $purple-buttom-form;
+                border: none;
+                padding: 5px;
+                border-radius: 10px;
+                width: 130px;
+                margin-top: 25px;
+                
+                display: grid;
+                grid-template-columns: auto 1fr;
+                align-items: center;
+                justify-content: center;
+                
+                color: $white-font; /*cambio del color de svg*/
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+
+                span{
+                    font-size: 18px;
+                    color: $white-font;
+                }
+            }
         }
     }
     
