@@ -34,6 +34,33 @@ body aside h2 {
   font-size: 32px;
   color: #453751;
 }
+body aside form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 25px;
+}
+body aside form div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+body aside form div label {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7A648C;
+}
+body aside form div input {
+  background-color: #FDDBBB;
+  width: 260px;
+  height: 31px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #453751;
+}
 body main {
   grid-column: 2/3;
   grid-row: 2/3;

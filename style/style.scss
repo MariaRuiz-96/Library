@@ -53,6 +53,37 @@ body{
             font-size: 32px;
             color: $purple-font-add;
         }
+        
+        form{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            padding: 25px;
+
+            div{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 5px;
+
+                label{
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: $purple-font-form;
+                }
+
+                input{
+                    background-color: $orange-text-shadow;
+                    width: 260px;
+                    height: 31px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border: none;
+                    border-radius:15px;
+                    font-size: 14px;
+                    color: $purple-font-add;
+                }
+            }
+        }
     }
     
     main{
