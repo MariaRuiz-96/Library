@@ -18,3 +18,26 @@ $white-font:#FFFFFF;
     margin: 0px;
     padding: 0px;
 }
+
+//*-------------------*/
+body{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+
+    header{
+        grid-auto-columns: 1/3;
+        grid-row: 1/2;
+    }
+
+    aside{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    main{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
