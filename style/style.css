@@ -87,4 +87,111 @@ body aside form button span {
 body main {
   grid-column: 2/3;
   grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: row;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+body main article {
+  background-color: #CB9DF0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5, auto);
+  justify-content: center;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-height: 170px;
+}
+body main article h3 {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  border-bottom: 3px solid #FFFFFF;
+  width: 200px;
+}
+body main article h4 {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFFFFF;
+  text-align: center;
+}
+body main article .pages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 5px;
+}
+body main article .pages h5 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  color: #FFFFFF;
+  justify-self: end;
+}
+body main article .pages span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFFFFF;
+}
+body main article .read {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+}
+body main article .read h5 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  color: #FFFFFF;
+  justify-self: end;
+}
+body main article .read span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFFFFF;
+  justify-self: center;
+}
+body main article .read .upgrade {
+  display: inline-flex;
+  padding: 2px 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 25px;
+  border: none;
+  background-color: #F0C1E1;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+body main article .delete {
+  display: inline-flex;
+  padding: 2px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 25px;
+  background-color: #F0C1E1;
+  border: none;
+  margin-top: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */
