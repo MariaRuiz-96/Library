@@ -1,11 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
     console.log("cargo bien")
 
-    const contenedor = document.querySelector("main");
-    const newContentBook = document.createElement("article");
-    const nameBook = document.createElement("h3");
-    const nameAuthor = document.createElement("h4");
-
     function generalSections(clase, titletext, contenttext){
         const section = document.createElement("section");
         section.classList.add(clase);
@@ -50,7 +45,14 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     function createNewBook(book){
+
+        const contenedor = document.querySelector("main");
+        const newContentBook = document.createElement("article")
+
+        const nameBook = document.createElement("h3");
         nameBook.textContent = book.title
+
+        const nameAuthor = document.createElement("h4");
         nameAuthor.textContent = book.author
     
         const pages = generalSections("pages", "Pagues: ", book.pages);
