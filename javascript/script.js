@@ -5,10 +5,23 @@ document.addEventListener("DOMContentLoaded", function(){
     const newContentBook = document.createElement("article");
     const nameBook = document.createElement("h3");
     const nameAuthor = document.createElement("h4");
-    const section= document.createElement("section");
-    const namePagesRead = document.createElement("h5");
-    const contentPagesRead = document.createElement("span");
-    
+    const buttonUpgrade = document.createElement("button");
+    const buttonDelete = document.createElement("button");
+
+    function generalSections(clase, titletext, contenttext){
+        const section = document.createElement("section");
+        section.classList.add(clase);
+
+        const title = document.createElement("h5");
+        title.textContent = titletext;
+        section.appendChild(title)
+
+        const contenttext =  document.createElement("span");
+        title.textContent = contenttext;
+        section.appendChild(contenttext);
+
+        return section;
+    }
 
     function newBook (title, author, pages) {
         this.title = title;
