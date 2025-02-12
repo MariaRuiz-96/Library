@@ -74,6 +74,10 @@ document.addEventListener("DOMContentLoaded", function(){
         newContentBook.appendChild(statusread)
         statusread.appendChild(upgrade)
         newContentBook.appendChild(Delete)
+
+        Delete.addEventListener("click", function(){
+            newContentBook.remove() /* //!elimina la etiqueta y su contenido*/
+        })
     }
     document.getElementById("new-book").addEventListener("click", saveNewBook)
 })
