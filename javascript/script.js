@@ -41,7 +41,12 @@ document.addEventListener("DOMContentLoaded", function(){
         const booknew = new newBook (title, author, pages)
         console.log(booknew)
 
-        createNewBook(booknew) /*se debe de poner aqui adentro ya que debe de pedir datos y despues rellenar*/
+        createNewBook(booknew) //*se debe de poner aqui adentro ya que debe de pedir datos y despues rellenar*
+
+        //! para limpiar los inputs de texto posterior a enviar la info
+        document.getElementById("Title").value = "";
+        document.getElementById("Author").value = "";
+        document.getElementById("Pages").value = "";
     }
 
     function createNewBook(book){
@@ -60,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function(){
         const upgrade = generalButton("upgrade", "Upgrade");
         const Delete = generalButton("delete", "Delete")
 
-        /*Se agraga el evento al boton en esta seccion para que el click solo afecte el articulo individual y no todo el documento*/
+        //*Se agraga el evento al boton en esta seccion para que el click solo afecte el articulo individual y no todo el documento
         upgrade.addEventListener("click", function(){
             if (statusread.querySelector("span").textContent === "No"){
                 statusread.querySelector("span").textContent = "Yes"
@@ -76,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function(){
         newContentBook.appendChild(Delete)
 
         Delete.addEventListener("click", function(){
-            newContentBook.remove() /* //!elimina la etiqueta y su contenido*/
+            newContentBook.remove() //!elimina la etiqueta y su contenido
         })
     }
     document.getElementById("new-book").addEventListener("click", saveNewBook)
