@@ -45,6 +45,27 @@ document.addEventListener("DOMContentLoaded", function(){
 
         const booknew = new newBook (title, author, pages)
         console.log(booknew)
+
+        createNewBook(booknew) /*se debe de poner aqui adentro ya que debe de pedir datos y despues rellenar*/
+    }
+
+    function createNewBook(book){
+        nameBook.textContent = book.title
+        nameAuthor.textContent = book.author
+    
+        const pages = generalSections("pages", "Pagues: ", book.pages);
+        const statusread = generalSections("read", "Read? ", book.read);
+
+        const upgrade = generalButton("upgrade", "Upgrade");
+        const Delete = generalButton("delete", "Delete")
+
+        contenedor.appendChild(newContentBook)
+        newContentBook.appendChild(nameBook)
+        newContentBook.appendChild(nameAuthor)
+        newContentBook.appendChild(pages)
+        newContentBook.appendChild(statusread)
+        statusread.appendChild(upgrade)
+        newContentBook.appendChild(Delete)
     }
     document.getElementById("new-book").addEventListener("click", saveNewBook)
 })
