@@ -241,3 +241,29 @@ body{
         }
     }
 }
+
+//*Animaciones
+
+#new-book{
+    &:hover{
+        cursor: pointer;
+        background-color: $purple-top;
+    }
+
+    &:active{
+        cursor: pointer;
+        background-color: $purple-font-add;
+    }
+}
+
+.read .upgrade, .delete{
+    &:hover{        
+        cursor: pointer;
+        background-color: #dda3cb;
+    }
+
+    &:active{
+        cursor: pointer;
+        background-color: #d38abc;
+    }
+}

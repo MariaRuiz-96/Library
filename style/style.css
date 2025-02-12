@@ -194,4 +194,22 @@ body main article .delete {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+#new-book:hover {
+  cursor: pointer;
+  background-color: #955CB6;
+}
+#new-book:active {
+  cursor: pointer;
+  background-color: #453751;
+}
+
+.read .upgrade:hover, .delete:hover {
+  cursor: pointer;
+  background-color: #dda3cb;
+}
+.read .upgrade:active, .delete:active {
+  cursor: pointer;
+  background-color: #d38abc;
 }/*# sourceMappingURL=style.css.map */
