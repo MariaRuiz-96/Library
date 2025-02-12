@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let author = document.getElementById("Author").value;
         let pages = document.getElementById("Pages").value;
 
-        if(title != ""|| author != "" || pages != ""){
+        if(title != "" && author != "" && pages != "" && !isNaN(pages)){
             const booknew = new newBook (title, author, pages)
             console.log(booknew)
     
