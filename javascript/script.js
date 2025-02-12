@@ -33,20 +33,21 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
     function saveNewBook (){
-        
         let title = document.getElementById("Title").value;
         let author = document.getElementById("Author").value;
         let pages = document.getElementById("Pages").value;
 
-        const booknew = new newBook (title, author, pages)
-        console.log(booknew)
-
-        createNewBook(booknew) //*se debe de poner aqui adentro ya que debe de pedir datos y despues rellenar*
-
-        //! para limpiar los inputs de texto posterior a enviar la info
-        document.getElementById("Title").value = "";
-        document.getElementById("Author").value = "";
-        document.getElementById("Pages").value = "";
+        if(title != ""|| author != "" || pages != ""){
+            const booknew = new newBook (title, author, pages)
+            console.log(booknew)
+    
+            createNewBook(booknew) //*se debe de poner aqui adentro ya que debe de pedir datos y despues rellenar*
+    
+            //! para limpiar los inputs de texto posterior a enviar la info
+            document.getElementById("Title").value = "";
+            document.getElementById("Author").value = "";
+            document.getElementById("Pages").value = "";
+        }
     }
 
     function createNewBook(book){
