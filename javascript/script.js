@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     function createNewBook(book){
-
         const contenedor = document.querySelector("main");
         const newContentBook = document.createElement("article")
 
@@ -60,6 +59,13 @@ document.addEventListener("DOMContentLoaded", function(){
 
         const upgrade = generalButton("upgrade", "Upgrade");
         const Delete = generalButton("delete", "Delete")
+
+        /*Se agraga el evento al boton en esta seccion para que el click solo afecte el articulo individual y no todo el documento*/
+        upgrade.addEventListener("click", function(){
+            if (statusread.querySelector("span").textContent === "No"){
+                statusread.querySelector("span").textContent = "Yes"
+            } else {statusread.querySelector("span").textContent = "No"}
+        })
 
         contenedor.appendChild(newContentBook)
         newContentBook.appendChild(nameBook)
