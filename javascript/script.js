@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", function(){
     const newContentBook = document.createElement("article");
     const nameBook = document.createElement("h3");
     const nameAuthor = document.createElement("h4");
-    const buttonUpgrade = document.createElement("button");
-    const buttonDelete = document.createElement("button");
 
     function generalSections(clase, titletext, contenttext){
         const section = document.createElement("section");
@@ -21,6 +19,14 @@ document.addEventListener("DOMContentLoaded", function(){
         section.appendChild(text);
 
         return section;
+    }
+
+    function generalButton(classbutton, namebutton){
+        const button = document.createElement("button");
+        button.classList.add(classbutton);
+        button.textContent = namebutton;
+
+        return button
     }
 
     function newBook (title, author, pages) {
@@ -39,25 +45,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
         const booknew = new newBook (title, author, pages)
         console.log(booknew)
-
-        createNewBook(booknew) /*se debe de poner aqui adentro ya que debe de pedir datos y despues rellenar*/
     }
-
-    function createNewBook(book){
-        nameBook.textContent = book.title
-        nameAuthor.textContent = book.author
-        buttonUpgrade.textContent = "Upgrade"
-        buttonDelete.textContent = "Delete"
-    
-        const pages = generalSections("pages", "Pagues: ", book.pages);
-        const statusread = generalSections("read", "Read? ", book.read);
-
-        contenedor.appendChild(newContentBook)
-        newContentBook.appendChild(nameBook)
-        newContentBook.appendChild(nameAuthor)
-        newContentBook.appendChild(pages)
-        newContentBook.appendChild(statusread)
-    }
-
     document.getElementById("new-book").addEventListener("click", saveNewBook)
 })
