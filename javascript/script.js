@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function(){
         title.textContent = titletext;
         section.appendChild(title)
 
-        const contenttext =  document.createElement("span");
+        const text =  document.createElement("span");
         title.textContent = contenttext;
-        section.appendChild(contenttext);
-
+        section.appendChild(text);
+        
         return section;
     }
 
